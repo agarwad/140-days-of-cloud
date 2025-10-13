@@ -1,7 +1,7 @@
 # ☁️ 140 Days Cloud + DevOps + MLOps Challenge - MLOps Ready)
 
 > **Duration:** 15–45 minutes daily
-> **Goal:** Master cloud, Kubernetes, DevOps, AWS, GitOps, MLOps, and observability with hands-on labs, blogs, and interview prep.
+> **Goal:** Master cloud, Kubernetes, DevOps, AWS, GitOps, MLOps, and observability with hands-on labs, blogs
 
 ---
 
