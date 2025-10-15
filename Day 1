@@ -1,0 +1,88 @@
+Directory Structure (Important Directories)
+
+/ → Root directory
+
+/bin → Essential binaries (commands like ls, cp, mv)
+
+/sbin → System binaries (for root/admin tasks)
+
+/home → User home directories (/home/amar)
+
+/etc → Configuration files
+
+/var → Variable data (logs, databases)
+
+/tmp → Temporary files
+
+/usr → User utilities, applications
+
+/dev → Device files
+
+/proc → Virtual filesystem for processes
+
+Linux File Types
+
+Every file has a type. Use ls -l to see it.
+
+Symbol	Type	Description
+-	Regular file	Normal text, binary, etc.
+d	Directory	Folder containing files
+l	Symbolic link	Shortcut/alias to another file
+c	Character device	Devices like keyboard, terminal
+b	Block device	Devices like HDD, USB
+s	Socket	Communication endpoint
+p	Named pipe	FIFO (first-in, first-out)
+$ ls -l
+drwxr-xr-x 2 amar amar 4096 Oct 15 12:00 Documents
+-rw-r--r-- 1 amar amar 1024 Oct 14 09:30 notes.txt
+lrwxrwxrwx 1 amar amar   11 Oct 13 14:00 shortcut -> /home/amar
+
+Permissions control who can do what with a file or directory.
+
+Permission Types
+
+Read (r) – Can read the file or list the directory.
+
+Write (w) – Can modify the file or add/remove files in a directory.
+
+Execute (x) – Can run the file as a program or access a directory.
+
+Permission Categories
+
+Every file has 3 categories of users:
+
+Category	Abbreviation	Who it is
+Owner	u	File owner
+Group	g	Users in the file's group
+Others	o	Everyone else
+Changing Permissions
+a) Using symbolic mode
+chmod [u/g/o/all][+/−/=][r/w/x] filename
+Examples:
+
+chmod u+x script.sh → give owner execute permission
+
+chmod go-w file.txt → remove write permission for group & others
+
+chmod a=r file.txt → set read-only for everyone
+
+b) Using numeric (octal) mode
+
+Permissions can be represented as numbers:
+
+Permission	Value
+---	0
+--x	1
+-w-	2
+-wx	3
+r--	4
+r-x	5
+rw-	6
+rwx	7
+chmod 754 file.txt
+
+7 → owner: rwx
+
+5 → group: r-x
+
+4 → others: r--
