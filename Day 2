@@ -1,0 +1,1 @@
+Basic commnads - ls, du -sh. df -h, free -h, cat, head, tail, grep, find, which, locate, whoami, chmod, chown, tar, gzip, gunzip, uname -a, ping, ifconfig, wget (to download), ps, kill, clear, !! (repeat last command), alias (Create shortcut command (e.g., alias ll='ls -lh'), unalias, sudo, exit,   
