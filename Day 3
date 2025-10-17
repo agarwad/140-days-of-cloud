@@ -1,0 +1,36 @@
+What Is a Shell Script?
+- A shell script is simply a file containing Linux commands written in sequence.
+eg : echo "Hello, World!"
+      ls -l
+      pwd
+If you run this script, it will: Print a message, List directory contents, Show your current location.
+
+**Shebang (#!) Explained :
+The first line in every script is: #!/bin/bash
+This is called the shebang line. It tells the system which interpreter to use to run the script (in this case, Bash). If you used #!/usr/bin/env bash, it automatically finds Bash even if it’s in a different location. Without the shebang, the script might run incorrectly or use a different shell.
+
+**Using Variables :   Variables store data (like text or numbers) that can be used later in your script.
+#!/bin/bash
+name="Amar"
+echo "Hello, $name!"
+ OUTPUT - Hello, Amar!
+No spaces around =
+✅ name="Amar"
+❌ name = "Amar" (wrong)
+Variables are case-sensitive
+Name ≠ name
+Use $ to access variable value
+Example: $name
+
+**System variables (environment variables)
+Already defined by Linux:
+Variable	Description
+$USER	Current logged user
+$HOME	Home directory
+$PWD	Present working directory
+$SHELL	Shell used
+$HOSTNAME	Computer name
+
+#!/bin/bash
+echo "You are logged in as $USER"
+echo "Your home directory is $HOME"
