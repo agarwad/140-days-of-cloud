@@ -1,0 +1,92 @@
+Networking basic level
+4 layers
++------------------------+   Layer 4 – Application (HTTP, DNS, SSH)
++------------------------+   Layer 3 – Transport (TCP, UDP)
++------------------------+   Layer 2 – Internet/Network (IP, routing)
++------------------------+   Layer 1 – Network Access (Ethernet, Wi-Fi)
+
+Layer 4: Application Layer
+
+Protocols you use daily:
+
+HTTP/HTTPS → Websites
+
+FTP/SFTP → File transfer
+
+DNS → domain → IP mapping
+
+SSH → Remote login
+
+✔️ Layer 3: Transport Layer
+
+This handles how data is delivered.
+
+🔹 TCP (Transmission Control Protocol)
+
+Connection-oriented
+
+Reliable
+
+Error checking
+
+Ensures delivery
+
+Used for:
+
+Web (HTTPS)
+
+SSH
+
+FTP
+
+Email
+
+🔹 UDP (User Datagram Protocol)
+
+No connection
+
+Faster
+
+No guarantee
+
+Used for:
+
+Video streaming
+
+VoIP
+
+Gaming
+
+DNS queries
+
+Simple Example:
+👉 TCP = Sending a registered post (proper delivery)
+👉 UDP = Throwing a flyer in someone’s mailbox (fast, not guaranteed)
+
+✔️ Layer 2: Internet Layer (IP)
+
+Handles addressing and routing.
+
+IP Address (example):
+
+IPv4: 192.168.1.10
+
+IPv6: 2409:4043:...
+
+Two types of IP:
+
+Private IP (LAN) → Not accessible from internet
+
+Public IP (WAN) → Used on internet
+
+✔️ Layer 1: Network Access
+
+Actual hardware & signals:
+
+Ethernet
+
+Wi-Fi
+
+Cables
+
+Frames
