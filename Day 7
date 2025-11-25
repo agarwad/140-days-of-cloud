@@ -1,0 +1,28 @@
+Netstat, Curl, Ping, Traceroute - 
+
+Send only 4 packets (Linux)
+ping -c 4 google.com
+*******************
+TRACEROUTE – Trace the Path to a Server
+
+Purpose:
+Shows every hop (router) between your device and the destination.
+***************************************
+NETSTAT – Check Ports, Connections, and Listening Services
+
+Purpose:
+
+Show open ports
+
+Show active connections
+
+Check which service is using which port
+
+Monitor network usage
+
+❗ In new Linux versions, netstat is replaced by ss, but both work.
+********************************************
+ping	Test server availability & latency
+traceroute	Show route path & hops
+curl	Send HTTP requests / API testing
+netstat	Show open ports & active connections
