@@ -1,0 +1,33 @@
+#!/bin/bash
+
+SRC="/home/user/Documents/"
+DEST="/home/user/backups/"
+
+rsync -avh --delete "$SRC" "$DEST"
+
+echo "Rsync backup completed."
+***************************************
+Automate with CRON (Scheduled Backups)
+crontab -e
+Daily backup at 2 AM
+0 2 * * * /home/user/backup.sh
+Backup every 6 hours
+0 */6 * * * /home/user/backup.sh
+**********************************************
+Real-Life Interview Questions (With Answers)
+
+1️⃣ Which command is best for incremental backups?
+✔ rsync
+
+2️⃣ How do you delete backups older than 7 days?
+✔ find /path -mtime +7 -delete
+
+3️⃣ How to automate backups?
+✔ Using cron + shell script
+
+4️⃣ Difference between cp, tar, rsync?
+
+Method	Best Use
+cp	Simple copy
+tar	Archiving + Compression
+rsync	Fast, incremental, network-friendly
