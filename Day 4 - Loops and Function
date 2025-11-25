@@ -1,0 +1,44 @@
+Loops - repeat
+Functions - call anytime
+*******************************
+for loop, while loop, until loop
+*****************************************
+for loop - for i in 1,2,3,4,5,6
+            do
+                echo "Number,$i"
+            done
+******************************************
+while loop - while condition is true
+while [condition]
+do
+......
+done
+-------------------
+Example - #!/bin/bash
+count=1
+while [ $count -le 5 ]
+do
+   echo "Count: $count"
+   ((count++))
+done
+****************
+until loop - runs until condition become true
+until [ condition ]
+do
+   commands
+done
+
+Example 
+#!/bin/bash
+x=1
+until [ $x -gt 5 ]
+do
+   echo "x = $x"
+   ((x++))
+done
+****************************
+Loop control commands
+break - exit from loop imidiately
+continue - skip for next iteration
+
+
